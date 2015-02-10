@@ -2,8 +2,11 @@ nav {
   height: 56px;
   font-size: 1em;
   width: 100%;
+  margin: auto;
   background: $navbar-bg;
-  font-family: $font-primary;
+  border-bottom: 1px solid $navbar-border;
+  position: fixed;
+  z-index: 100;
 
   ul {
     margin: 0;
@@ -12,7 +15,7 @@ nav {
     margin-right: 1rem;
 
     li {
-      margin-right: 1px;
+      //margin-right: 1px;
       display: inline-block;
       list-style-type: none;
       @include transition(0.2s);
@@ -25,12 +28,15 @@ nav {
         display: block;
         line-height: 56px;
         padding: 0 15px;
-        font-size: 1.5em;
+        border-left: 1px solid $navbar-border;
+        font-size: 1em;
+        font-family: $font-primary;
+        font-weight: 300;
       }
     }
 
     li:hover {
-      background: $gray;
+      background: $white;
     }
 
   }
