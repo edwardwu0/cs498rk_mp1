@@ -1,0 +1,12 @@
+section .content {
+  border: 1px solid $navbar-border;
+  width: 100%;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  max-width: 1920px;
+  padding-top: $navbar-height;
+  height: auto !important;
+}

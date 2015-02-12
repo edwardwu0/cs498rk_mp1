@@ -1,5 +1,5 @@
 nav {
-  height: 56px;
+  height: $navbar-height;
   font-size: 1em;
   width: 100%;
   margin: auto;
@@ -7,6 +7,7 @@ nav {
   border-bottom: 1px solid $navbar-border;
   position: fixed;
   z-index: 100;
+  top: 0;
 
   ul {
     margin: 0;
@@ -15,18 +16,18 @@ nav {
     margin-right: 1rem;
 
     li {
-      //margin-right: 1px;
       display: inline-block;
       list-style-type: none;
-      @include transition(0.2s);
-
-      float: right;
+      //@include transition-property(border-bottom);
+      @include transition-duration(0.2s);
+      @include transition-timing-function(ease-in);
+      float: left;
 
       a {
         text-decoration: none;
         color: black;
         display: block;
-        line-height: 56px;
+        line-height: $navbar-height;
         padding: 0 15px;
         border-left: 1px solid $navbar-border;
         font-size: 1em;
@@ -36,7 +37,8 @@ nav {
     }
 
     li:hover {
-      background: $white;
+      background: $gray;
+      border-bottom: 2px solid $navbar-hover;
     }
 
   }

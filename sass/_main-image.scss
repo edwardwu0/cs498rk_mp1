@@ -1,0 +1,35 @@
+#main-image {
+  height: 600px;
+  background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+  ),
+  url(/img/video-fallback.jpg);
+  background-position: center;
+  background-attachment: fixed;
+
+  section {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+}
+
+#main-image-text {
+
+  h1 {
+    font-family: $font-title;
+    font-weight: 300;
+    font-size: 3rem;
+    color: $white;
+  }
+
+  p {
+    font-family: $font-title;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $white;
+  }
+}

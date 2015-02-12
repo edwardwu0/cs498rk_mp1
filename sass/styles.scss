@@ -1,9 +1,15 @@
 @import "compass";
 @import "compass/reset";
+@import "compass/css3";
 
 @import "fonts";
 @import "variables";
 @import "mixins";
 @import "base";
 @import "nav";
+@import "content";
 @import "columns";
+@import "video";
+@import "carousel";
+@import "footer";
+@import "main-image.scss";
