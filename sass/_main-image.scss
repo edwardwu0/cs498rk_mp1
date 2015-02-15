@@ -1,4 +1,9 @@
-#main-image {
+section#main {
+  width: 100%;
+  display: table;
+}
+
+#main {
   height: 600px;
   background-image: linear-gradient(
                   rgba(0, 0, 0, 0.5),
@@ -10,14 +15,14 @@
 
   section {
     width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
   }
 }
 
-#main-image-text {
+#main-text {
 
   h1 {
     font-family: $font-title;
