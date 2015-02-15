@@ -1,4 +1,52 @@
-nav {
+header {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  background-color: $navbar-bg;
+  border-bottom: 1px solid $navbar-border;
+  z-index: 100;
+
+  nav.main {
+    height: $navbar-height;
+    float: right;
+
+    ul#menu-main {
+      height: 100%;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        height: 100%;
+        border-left: 1px solid $navbar-border;
+        padding: 0 15px;
+        float: left;
+        @include transition(0.2s);
+
+        a {
+          height: 100%;
+          text-decoration: none;
+          display: table;
+          color: black;
+          font-family: $font-primary;
+          font-size: 1em;
+          font-weight: 300;
+
+          span {
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+      li:hover {
+        background: $navbar-hover;
+        border-bottom: 2px solid $navbar-hover-border;
+      }
+    }
+  }
+}
+
+/*nav.main {
   height: $navbar-height;
   font-size: 1em;
   width: 100%;
@@ -27,7 +75,7 @@ nav {
         text-decoration: none;
         color: black;
         display: block;
-        line-height: $navbar-height;
+        line-height: 100%;
         padding: 0 15px;
         border-left: 1px solid $navbar-border;
         font-size: 1em;
@@ -43,4 +91,4 @@ nav {
 
   }
 
-}
+}*/

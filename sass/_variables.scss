@@ -1,15 +1,17 @@
-$orange         : #BD3613;
-$blue           : #2176C7;
-$white: #ffffff;
-$gray: #dedede;
-$navbar-border: rgba(#ffffff, 0.9);
+$navbar-border: rgba(#cbcbcb, 0.9);
 $navbar-bg: rgba(#ffffff, 1);
-$navbar-hover: rgba(#ff0600, 0.9);
+$navbar-hover: rgba(#dadada, 0.9);
+$navbar-hover-border: rgba(#ff0600, 0.9);
+$navbar-height: 76px;
+
 $font-primary: 'Open Sans', serif;
 $font-title: 'Source Sans Pro', sans-serif;
 $font-secondary: Bree Serif, serif;
-$default-border-radius : 10px;
+
 $bg-img: '/img/bg.png';
-$navbar-height: 50px;
+
 $columns-bg: rgba(#dedede, 0.9);
 $carousel-bg: rgba(#dedede, 0.9);
+
+$gray: #dedede;
+$white: #ffffff;
