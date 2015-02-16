@@ -24,11 +24,6 @@ $(document).ready(function() {
 
         console.log(navBarHeight);
 
-        /*if (position > navBarHeight) {
-            navBar.stop().animate({
-                height: navBarHeight * 0.5
-            }, 500);
-        } else*/
         if (position <= navBarHeight * 0.5 && position >= 0) {
             navBar.stop().height(navBarHeight - position);
         } else if (position > navBarHeight ) {
@@ -36,5 +31,32 @@ $(document).ready(function() {
                 height: navBarHeight * 0.5
             }, 500);
         }
+    });
+
+    var item_width = $('ul#carousel-list li').outerWidth();
+    var left_value = -1 * item_width;
+
+    $('ul#carousel-list li:first').before($('ul#carousel-list li:last'));
+
+    $('ul#carousel-list').css({'left': left_value});
+
+    $('#right').click(function() {
+        var left_indent = parseInt($('ul#carousel-list').css('left')) - item_width;
+
+        $('ul#carousel-list').animate({'left': left_indent}, 750, function() {
+            $('ul#carousel-list li:first').before($('ul#carousel-list li:last'));
+
+            $('ul#carousel-list').css({'left': left_value});
+        })
+    });
+
+    $('#left').click(function() {
+        var left_indent = parseInt($('ul#carousel-list').css('left')) + item_width;
+
+        $('ul#carousel-list').animate({'left': left_indent}, 750, function() {
+            $('ul#carousel-list li:first').before($('ul#carousel-list li:last'));
+
+            $('ul#carousel-list').css({'left': left_value});
+        })
     });
 });
