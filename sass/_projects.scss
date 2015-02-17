@@ -11,6 +11,8 @@ section#projects {
     position: absolute;
     z-index: 20;
     top: 0;
+
+    @include transition(1s);
   }
 
   img#right.navigation {

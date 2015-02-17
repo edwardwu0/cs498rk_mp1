@@ -1,5 +1,5 @@
 $navbar-border: rgba(#cbcbcb, 0.9);
-$navbar-bg: rgba(#ffffff, 1);
+$navbar-bg: white;
 $navbar-hover: rgba(#dadada, 0.9);
 $navbar-hover-border: rgba(#ff0600, 0.9);
 $navbar-height: 76px;
@@ -10,11 +10,14 @@ $font-secondary: Bree Serif, serif;
 
 $bg-img: '/img/bg.png';
 
-$columns-bg: rgba(#dedede, 0.9);
+$column-border: rgba(#dedede, 0.9);
 
 $carousel-bg: rgba(#dedede, 0.9);
 
 $navigation-bg: rgba(#000000, 0.5);
+
+$modal-button-hover: rgba(#000000, 0.5);
+$modal-overlay-bg: rgba(#000000, 0.5);
 
 $gray: #dedede;
 $white: #ffffff;

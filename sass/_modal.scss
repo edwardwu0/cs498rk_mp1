@@ -1,0 +1,35 @@
+section#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: $modal-overlay-bg;
+
+
+
+  section#modal-content {
+    margin: 3% auto;
+    width: 70%;
+    height: 90%;
+    background-color: white;
+
+    img {
+      margin-top: 4px;
+      width: 50px;
+      height: 50px;
+    }
+
+    img#modal-close {
+      float: right;
+      margin: 10px 10px;
+      height: 50px;
+      width: 50px;
+    }
+    img#modal-close:hover {
+      cursor: hand;
+    }
+  }
+}
