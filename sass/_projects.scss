@@ -46,19 +46,22 @@ section#projects {
         height: 100%;
         float: left;
         overflow: hidden;
+
+        background-size: cover;
+        background-position: center;
       }
     }
   }
 }
 
 #img1 {
-  background: url(/img/video-fallback.jpg);
+  background: url(/img/img1.jpg);
 }
 
 #img2 {
-  background: url(/img/video-fallback.jpg);
+  background: url(/img/img2.jpg);
 }
 
 #img3 {
-  background: url(/img/video-fallback.jpg);
+  background: url(/img/img3.jpg);
 }

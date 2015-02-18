@@ -1,23 +1,28 @@
+//Navigation bar
 $navbar-border: rgba(#cbcbcb, 0.9);
 $navbar-bg: white;
 $navbar-hover: rgba(#dadada, 0.9);
 $navbar-hover-border: rgba(#ff0600, 0.9);
 $navbar-height: 76px;
 
+//Fonts
 $font-primary: 'Open Sans', serif;
 $font-title: 'Source Sans Pro', sans-serif;
-$font-secondary: Bree Serif, serif;
+$font-footer: 'Raleway', sans-serif;
 
 $bg-img: '/img/bg.png';
 
+//About section columns
 $column-border: rgba(#dedede, 0.9);
 
+//Project section carousel
 $carousel-bg: rgba(#dedede, 0.9);
-
 $navigation-bg: rgba(#000000, 0.5);
 
+//Modal
 $modal-button-hover: rgba(#000000, 0.5);
 $modal-overlay-bg: rgba(#000000, 0.5);
 
-$gray: #dedede;
-$white: #ffffff;
+//Footer
+$footer-bg: #313131;
+$footer-column-divider: rgba(#6e6e6e, 0.5);

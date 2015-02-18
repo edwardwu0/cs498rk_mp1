@@ -9,7 +9,7 @@ section#main {
                   rgba(0, 0, 0, 0.5),
                   rgba(0, 0, 0, 0.5)
   ),
-  url(/img/video-fallback.jpg);
+  url(/img/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -29,13 +29,13 @@ section#main {
     font-family: $font-title;
     font-weight: 300;
     font-size: 3rem;
-    color: $white;
+    color: white;
   }
 
   p {
     font-family: $font-title;
     font-weight: 300;
     font-size: 1.5rem;
-    color: $white;
+    color: white;
   }
 }

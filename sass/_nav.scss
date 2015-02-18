@@ -46,49 +46,9 @@ header {
   }
 }
 
-/*nav.main {
-  height: $navbar-height;
-  font-size: 1em;
-  width: 100%;
-  margin: auto;
-  background: $navbar-bg;
-  border-bottom: 1px solid $navbar-border;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-
-  ul {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    //margin-right: 1rem;
-
-    li {
-      display: inline-block;
-      list-style-type: none;
-      //@include transition-property(border-bottom);
-      @include transition-duration(0.2s);
-      //@include transition-timing-function(ease-in);
-      float: left;
-
-      a {
-        text-decoration: none;
-        color: black;
-        display: block;
-        line-height: 100%;
-        padding: 0 15px;
-        border-left: 1px solid $navbar-border;
-        font-size: 1em;
-        font-family: $font-primary;
-        font-weight: 300;
-      }
-    }
-
-    li:hover {
-      background: $gray;
-      border-bottom: 2px solid $navbar-hover;
-    }
-
-  }
-
-}*/
+#header-logo {
+  height: 100%;
+  width: auto;
+  background-image: url("/img/bubble.svg");
+  background-size: cover;
+}

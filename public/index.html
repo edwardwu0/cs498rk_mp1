@@ -9,9 +9,9 @@
 <body>
     <header>
         <nav class="main">
-            <div class="logo">
+            <!--<div id="header-logo">
 
-            </div>
+            </div>-->
             <ul id="menu-main">
                 <li><a href="#top"><span>home</span></a></li>
                 <li><a href="#about"><span>about</span></a></li>
@@ -24,7 +24,10 @@
     <section id="modal-overlay">
         <section id="modal-content">
             <img src="/img/close.svg" id="modal-close">
-            <img src="/img/pdf.svg" />
+            <video autoplay loop muted id="bg-vid">
+                <source src="/video/video.webm" type="video/webm" />
+                <source src="/video/video.mp4" type="video/mp4" />
+            </video>
         </section>
     </section>
     <section id="top" class="wrapper">
@@ -65,11 +68,10 @@
         </section>
         <section id="resume" class="content">
             <div id="resume-container">
-                <p id="resume-text">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-
-                    <br><br>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
-
-                    <br><br>Click the image for modal. -></p>
+                <p id="resume-text">
+                    Ancient alien SETI petroglyph otherworldly visitors pre-colonial aerodynamics Vymaanika-Shaastra the vedas, King Soloman the answer is a resounding YES... Electromagnetic Vymaanika-Shaastra, crystal skull golden disk Chariot of the Gods alien. Otherworldly visitors von Daniken alien petroglyph, ancient god clearly choral castle, UFO aircraft. The answer is a resounding YES... Sanskrit Machu Picchu Vymaanika-Shaastra, magnetic current the vedas Ezekiel choral castle, I know it sounds crazy... Ancient civilization. I know it sounds crazy... Spaceships Mahabharata Nazca lines Machu Picchu Indian texts portal earth mound, Chariot of the Gods flying vessels ancient god Nazca lines cover up. Gods Easter island kachina doll sightings pre-colonial aerodynamics Ezekiel flying vessels astronaut burmuta triangle sanskrit, ancient civilization King Soloman alien choral castle astronaut Mahabharata kachina doll Vymaanika-Shaastra. Extraterrestrial flying vessels weightless Giorgio UFO space brothers King Soloman targeted mutation, ancient religions helicopter heiroglyph Giorgio King Soloman Nazca lines astronaut. Alien sun disc, burmuta triangle evidence.
+                    <br><br>
+                    Click the image for modal. -></p>
                 <div>
                     <img src="/img/newspaper.svg" id="resume-button" />
                 </div>
@@ -77,28 +79,36 @@
             </div>
 
         </section>
-        <footer id="contact" class="content"></footer>
-        <!--<section id="video">
-            <video autoplay loop id="bg-vid">
-                <source src="/video/video.webm" type='video/webm; codecs="vp8, vorbis"' />
-                <img src="/img/video-fallback.jpg" title="video tag unsupported" />
-            </video>
-        </section>-->
+
+        <footer id="contact" class="content">
+            <div id="footer-container">
+                <div class="footer-text">
+                    <img src="/img/personal.svg" class="footer-icon" />
+                    <h1>contact me</h1>
+                </div>
+                <div class="footer-text">
+                    <a href="//www.facebook.com">
+                        <img src="/img/facebook.svg" class="footer-icon" />
+                        <h1>facebook</h1>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <a href="//www.twitter.com">
+                        <img src="/img/twitter.svg" class="footer-icon" />
+                        <h1>twitter</h1>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <a href="//www.linkedin.com">
+                        <img src="/img/linkedin.svg" class="footer-icon" />
+                        <h1>linkedIn</h1>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
     </section>
 
-    <!--<section id="columns">
-        <div class="container">
-            <div class="column-left">
-                <p>blah blah blah</p>
-            </div>
-            <div class="column-middle">
-                <p>blah blah blah</p>
-            </div>
-            <div class="column-right">
-                <p>blah blah blah</p>
-            </div>
-        </div>
-    </section>-->
     <script src="./lib/jquery-2.1.3.min/index.js"></script>
     <script src="./js/script.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>

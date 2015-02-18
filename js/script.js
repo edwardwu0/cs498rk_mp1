@@ -20,8 +20,6 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var position = $(this).scrollTop();
 
-        console.log(position);
-
         var navBarHeight = jQuery.data(navBar, 'oHeight');
 
         var sectionHeights = [];
@@ -29,12 +27,6 @@ $(document).ready(function() {
         $('.content').each(function(i, obj) {
             sectionHeights.push($(this).offset().top - (navBarHeight * 0.5));
         });
-
-        for (var i = 0; i < sectionHeights.length; i++) {
-            console.log(sectionHeights[i]);
-        }
-
-        console.log($(document).height());
 
         var sectionIndex = 0;
 
@@ -49,8 +41,6 @@ $(document).ready(function() {
                 }
             }
         }
-
-        console.log(sectionIndex);
 
         $('ul#menu-main li').each(function(i, obj) {
             if (i === sectionIndex) {
@@ -78,16 +68,18 @@ $(document).ready(function() {
 
     $('ul#carousel-list').css({'left': leftIndent});
 
+    //next
     $('#right').click(function() {
         var left_indent = parseInt($('ul#carousel-list').css('left')) - carouselWidth;
 
         $('ul#carousel-list').animate({'left': left_indent}, 750, function() {
-            $('ul#carousel-list li:first').before($('ul#carousel-list li:last'));
+            $('ul#carousel-list li:last').after($('ul#carousel-list li:first'));
 
             $('ul#carousel-list').css({'left': leftIndent});
         })
     });
 
+    //before
     $('#left').click(function() {
         var left_indent = parseInt($('ul#carousel-list').css('left')) + carouselWidth;
 

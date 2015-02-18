@@ -1,17 +1,17 @@
-section #video {
+section#video {
   position: relative;
-  height: 720px;
+  height: 400px;
   overflow: hidden;
 
-  video #bg-vid {
-    position: fixed;
+  video#bg-vid {
+    position: absolute;
     right: 0;
-    bottom: 0;
-    //min-width: 100%;
-    //min-height: 100%;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
     width: auto;
-    height: 500px;
-    z-index: -100;
+    height: auto;
+    z-index: -200;
     background-size: cover;
   }
 }

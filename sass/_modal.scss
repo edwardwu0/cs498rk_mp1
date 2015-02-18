@@ -15,6 +15,7 @@ section#modal-overlay {
     width: 70%;
     height: 90%;
     background-color: white;
+    overflow: hidden;
 
     img {
       margin-top: 4px;
@@ -29,7 +30,7 @@ section#modal-overlay {
       width: 50px;
     }
     img#modal-close:hover {
-      cursor: hand;
+      cursor: pointer;
     }
   }
 }
