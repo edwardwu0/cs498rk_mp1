@@ -77,7 +77,7 @@ $(document).ready(function() {
     //get how wide one item in the carousel is
     var carouselWidth = $('ul#carousel-list li').outerWidth();
     //negative carousel item width
-    var leftIndent = -1 * carouselWidth;
+    var leftIndent = -carouselWidth;
 
     //send the last carousel item before the first carousel item for navigating backwards
     $('ul#carousel-list li:first').before($('ul#carousel-list li:last'));
@@ -94,7 +94,7 @@ $(document).ready(function() {
             $('ul#carousel-list li:last').after($('ul#carousel-list li:first'));
 
             $('ul#carousel-list').css({'left': leftIndent});
-        })
+        });
     });
 
     //before
@@ -105,7 +105,7 @@ $(document).ready(function() {
             $('ul#carousel-list li:first').before($('ul#carousel-list li:last'));
 
             $('ul#carousel-list').css({'left': leftIndent});
-        })
+        });
     });
 
     //closing the modal
