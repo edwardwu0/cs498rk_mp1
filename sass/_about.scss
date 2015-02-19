@@ -2,20 +2,30 @@ section#about {
   height: 320px;
   background: white;
 
-  div#about-text {
-    width: 100%;
+  div#about-container {
     height: 100%;
-    text-align: center;
-    @include column-count(3);
-    @include column-rule(1px, solid, $column-border);
 
-    div.column {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: table;
+
+    div#about-text {
       width: 100%;
       height: 100%;
+      text-align: center;
+      @include column-count(3);
+      @include column-rule(1px, solid, $column-border);
+      display: table-cell;
+      vertical-align: middle;
 
-      p {
-        font-family: $font-primary;
-        line-height: 200%;
+      div.column {
+        width: 100%;
+        height: 100%;
+
+        p {
+          font-family: $font-primary;
+          line-height: 200%;
+        }
       }
     }
   }
